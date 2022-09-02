@@ -1,0 +1,9 @@
+# You need to provide details about yourself that we can use to contact you.
+[user]
+username = "DaInfLoop"
+email = "backupharoongames100@gmail.com"
+
+
+[records]
+CNAME = "dainfloop.is-a.dev"
+TXT = "replit-verify=ea1ab2ec-071c-45d5-8455-bfdecf9fb1b1"
