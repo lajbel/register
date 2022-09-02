@@ -1,5 +1,5 @@
-![may-be.gay | free subdomains for possibly queer folx](https://may-be.gay/thumbnail.png)
-**may-be.gay** is a service in which you can register your own sub-domain for your personal website.
+<p align="center"><img src="https://may-be.gay/thumbnail.png" width="600px" height="314px" alt="may-be.gay | free subdomains for possibly queer folx" /></p>
+<b>may-be.gay</b> is a service in which you can register your own sub-domain for your personal website.
 
 # How to register
 As of now there is no automated way to register your website, however you can DM [`_hayrenryzm#7039`](https://discord.com/users/636701123620634653) on Discord to request your `may-be.gay` subdomain. All you have to do is:
