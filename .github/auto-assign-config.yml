@@ -1,7 +1,10 @@
 addAssignees: true
+addReviewers: true
+
+reviewers:
+  - dainfloop
 
 assignees:
-  - dainfloop
   - rayhanadev
 
-numberOfAssignees: 2
+numberOfReviewers: 0 
