@@ -2,7 +2,13 @@ const toml = require('toml');
 const fs = require('fs');
 const { fetch } = require('undici')
 
-let domains = fs.readdirSync('domains').filter(x => x.endsWith('.toml'));
+let domains = []
+
+let argv = process.argv
+argv.shift()
+argv.shift()
+
+domains = argv.map(x => x.replace('domains/', ''))
 
 function registerNewRecord(record_type, subdomain, { records: tomlData }) {
   fetch(`https://api.cloudflare.com/client/v4/zones/${process.env.CF_ZONE_ID}/dns_records`, {
