@@ -1,4 +1,7 @@
 <p align="center"><img src="https://may-be.gay/thumbnail.png" width="600px" height="314px" alt="may-be.gay | free subdomains for possibly queer folx" /></p>
+<a href="https://gitmoji.dev">
+  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+</a>
 <b>may-be.gay</b> is a service in which you can register your own sub-domain for your personal website.
 
 # How to register
