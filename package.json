@@ -4,7 +4,7 @@
   "description": "<p align=\"center\"><img src=\"https://may-be.gay/thumbnail.png\" width=\"600px\" height=\"314px\" alt=\"may-be.gay | free subdomains for possibly queer folx\" /></p> <b>may-be.gay</b> is a service in which you can register your own sub-domain for your personal website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ."
   },
   "repository": {
     "type": "git",
