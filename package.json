@@ -1,0 +1,24 @@
+{
+  "name": "register",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><img src=\"https://may-be.gay/thumbnail.png\" width=\"600px\" height=\"314px\" alt=\"may-be.gay | free subdomains for possibly queer folx\" /></p> <b>may-be.gay</b> is a service in which you can register your own sub-domain for your personal website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/may-be-gay/register.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/may-be-gay/register/issues"
+  },
+  "homepage": "https://github.com/may-be-gay/register#readme",
+  "dependencies": {
+    "toml": "^3.0.0",
+    "undici": "^5.10.0"
+  }
+}

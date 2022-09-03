@@ -3,7 +3,6 @@
 username = "DaInfLoop"
 email = "backupharoongames100@gmail.com"
 
-
 [records]
-CNAME = "dainfloop.is-a.dev"
-TXT = "replit-verify=ea1ab2ec-071c-45d5-8455-bfdecf9fb1b1"
+CNAME = "d91e47fc-3bf6-459a-9a40-e994b4cea997.id.repl.co"
+TXT = "replit-verify=d91e47fc-3bf6-459a-9a40-e994b4cea997"
