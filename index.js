@@ -16,7 +16,7 @@ function registerNewRecord(record_type, subdomain, { records: tomlData }) {
     body: JSON.stringify({
       type: record_type,
       name: subdomain,
-      content: tomlData[record],
+      content: tomlData[record_type],
       ttl: 1
     }),
     headers: {
@@ -46,7 +46,7 @@ domains.forEach(async function(domain) {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+ process.env.CF_API_TOKEN
+      'Authorization': 'Bearer ' + process.env.CF_API_TOKEN
     }
   }).then(r => r.json());
 
