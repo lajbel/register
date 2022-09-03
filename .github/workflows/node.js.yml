@@ -29,4 +29,4 @@ jobs:
       uses: jitterbit/get-changed-files@v1
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm . ${{ steps.files.outputs.added_modified }}
+    - run: node . ${{ steps.files.outputs.added_modified }}
