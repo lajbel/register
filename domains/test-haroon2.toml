@@ -1,0 +1,8 @@
+# You need to provide details about yourself that we can use to contact you.
+[user]
+username = "DaInfLoop"
+email = "backupharoongames100@gmail.com"
+
+[records]
+CNAME = "test-haroon.may-be.gay"
+TXT = "replit-verify=d91e47fc-3bf6-459a-9a40-e994b4cea997"
