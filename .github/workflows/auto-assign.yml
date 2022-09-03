@@ -1,4 +1,4 @@
-name: Auto Assign & Labeller
+name: Auto Assign
 on:
   pull_request:
     types:
@@ -13,6 +13,3 @@ jobs:
         with:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CONFIG_FILE: '.github/auto-assign-config.yml'
-      - uses: actions/labeler@v4
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
