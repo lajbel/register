@@ -1,6 +1,0 @@
-[user]
-username = ""
-email = ""
-
-[records]
-TXT = "v=DMARC1; p=reject; rua=mailto:rayhanadev@protonmail.com"
