@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/may-be-gay/register#readme",
   "dependencies": {
-    "toml": "^3.0.0",
+    "@iarna/toml": "^2.2.5",
     "undici": "^5.10.0"
   }
 }

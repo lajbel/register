@@ -1,4 +1,4 @@
-const toml = require('toml');
+const toml = require('@iarna/toml');
 const fs = require('fs');
 const { fetch } = require('undici')
 
