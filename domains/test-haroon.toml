@@ -1,0 +1,7 @@
+[user]
+username = ""
+email = ""
+
+[records]
+CNAME = "591d5c54-24e1-4006-801a-326638cfbcd7.id.repl.co"
+TXT = "replit-verify=591d5c54-24e1-4006-801a-326638cfbcd7"
