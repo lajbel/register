@@ -26,18 +26,18 @@ function registerNewRecord(record_type, subdomain, { records: tomlData }) {
   }).then(r => r.json());
 }
 
-// function editExistingRecord(record_type, subdomain, { records: tomlData }, cf_id) {
-//   fetch(`https://api.cloudflare.com/client/v4/zones/${process.env.CF_ZONE_ID}/dns_records/${cf_id}`, {
-//     method: 'PATCH',
-//     body: JSON.stringify({
-//       content: tomlData[record],
-//     }),
-//     headers: {
-//       'Content-Type': 'application/json',
-//       'Authorization': 'Bearer '+ process.env.CF_API_TOKEN
-//     }
-//   }).then(r => r.json());
-// }
+function editExistingRecord(record_type, subdomain, { records: tomlData }, cf_id) {
+  fetch(`https://api.cloudflare.com/client/v4/zones/${process.env.CF_ZONE_ID}/dns_records/${cf_id}`, {
+    method: 'PATCH',
+    body: JSON.stringify({
+      content: tomlData[record_type],
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer '+ process.env.CF_API_TOKEN
+    }
+  }).then(r => r.json()).then(console.log);
+}
 
 domains.forEach(async function(domain) {
   let data = toml.parse(fs.readFileSync('domains/' + domain).toString());
@@ -59,9 +59,11 @@ domains.forEach(async function(domain) {
   } else if (domainRecords.length != Object.keys(data.records).length) {
     // A record was added or deleted, edit it
   } else {
-    let changedRecords = domainRecords.filter(cf_record => data.records[cf_record.type] == cf_record.content)
+    let changedRecords = domainRecords.filter(cf_record => data.records[cf_record.type] != cf_record.content)
     if (changedRecords.length) {
-      // A record was changed, but no record was added or deleted, edit it
+      changedRecords.forEach(cf_record => {
+        editExistingRecord(cf_record.type, cf_record.name, data, cf_record.id)
+      }) 
     } else {
       // Nothing was changed, don't edit it
     }
