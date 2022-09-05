@@ -36,7 +36,7 @@ function editExistingRecord(record_type, subdomain, { records: tomlData }, cf_id
       'Content-Type': 'application/json',
       'Authorization': 'Bearer '+ process.env.CF_API_TOKEN
     }
-  }).then(r => r.json()).then(console.log);
+  }).then(r => r.json());
 }
 
 domains.forEach(async function(domain) {
