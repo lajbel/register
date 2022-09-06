@@ -1,10 +1,5 @@
 addAssignees: true
-addReviewers: true
-
-reviewers:
-  - dainfloop
-
 assignees:
-  - rayhanadev
+  - may-be-gay/domain-admin
 
-numberOfReviewers: 0 
+numberOfAssignees: 0 
